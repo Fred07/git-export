@@ -20,3 +20,5 @@ for i in `git diff-tree --no-commit-id --name-only -r "$1" "$2"`
     mkdir -p "$t/$e/$d"
     cp "$d/$f" "$t/$e/$d/$f"
     done
+
+find "$t/$e/" -name '.DS_Store' -delete
